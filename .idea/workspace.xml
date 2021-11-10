@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9b47f7c9-057a-4fed-b052-0507329bd271" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Kubernetes/pod-definition.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Terraform/learn-terraform-aws-instance/.terraform.lock.hcl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Terraform/learn-terraform-aws-instance/.terraform/providers/registry.terraform.io/hashicorp/aws/3.56.0/darwin_arm64/terraform-provider-aws_v3.56.0_x5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Terraform/learn-terraform-aws-instance/main.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Terraform/learn-terraform-aws-instance/terraform.tfstate" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Terraform/learn-terraform-aws-instance/terraform.tfstate.backup" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Terraform/learn-terraform-docker-container/.terraform.lock.hcl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Terraform/learn-terraform-docker-container/.terraform/providers/registry.terraform.io/kreuzwerker/docker/2.13.0/darwin_arm64/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Terraform/learn-terraform-docker-container/.terraform/providers/registry.terraform.io/kreuzwerker/docker/2.13.0/darwin_arm64/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Terraform/learn-terraform-docker-container/.terraform/providers/registry.terraform.io/kreuzwerker/docker/2.13.0/darwin_arm64/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Terraform/learn-terraform-docker-container/.terraform/providers/registry.terraform.io/kreuzwerker/docker/2.13.0/darwin_arm64/terraform-provider-docker_v2.13.0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Terraform/learn-terraform-docker-container/main.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Terraform/learn-terraform-docker-container/terraform.tfstate" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Terraform/learn-terraform-docker-container/terraform.tfstate.backup" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Terraform/sort.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Terraform/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Complete-Python-3-Bootcamp/00-Python Object and Data Structure Basics/01-Numbers.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Complete-Python-3-Bootcamp/00-Python Object and Data Structure Basics/01-Numbers.ipynb" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Complete-Python-3-Bootcamp" />
+  </component>
+  <component name="ProjectId" id="1zfref1hwL5JhCNwtKU9bqK6mHl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9b47f7c9-057a-4fed-b052-0507329bd271" name="Changes" comment="" />
+      <created>1634550080645</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1634550080645</updated>
+    </task>
+    <servers />
+  </component>
+</project>
