@@ -14,13 +14,13 @@ provider "aws" {
   region  = "ap-southeast-1"
 }
 
-resource "aws_instance" "app_server2" {
+resource "aws_instance" "app_server1" {
   ami           = "ami-0d058fe428540cd89"
   instance_type = "t2.micro"
   key_name = "terra"
 
   tags = {
-    Name = "AppServerInstance"
+    Name = "AppServerInstance_1"
     Team = "Integrated"
   }
 }
