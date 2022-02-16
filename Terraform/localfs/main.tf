@@ -1,5 +1,11 @@
-resource "local_file" "games" {
-  filename = "/Users/vinay/DevOps/Terraform/localfs/favorite-games"
-  #content  = "FIFA 2112"
-  sensitive_content = "testing"
+
+
+resource "random_password" "iac_random" {
+  length = 1000
+  min_upper = 5
+}
+
+resource "local_file" "name" {
+  filename = "/Users/vinay/DevOps/Terraform/localfs/tin"
+  content = "testing"
 }
