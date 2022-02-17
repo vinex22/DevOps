@@ -20,7 +20,7 @@ resource "aws_instance" "app_server1" {
   key_name = "terra"
 
   tags = {
-    Name = "AppServerInstance_11"
+    Name = "AppServerInstance_112"
     Team = "Integrated"
   }
 }
