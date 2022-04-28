@@ -14,14 +14,21 @@ provider "aws" {
   region  = "ap-southeast-1"
 }
 
-resource "aws_instance" "app_server1" {
-  ami           = "ami-0d058fe428540cd89"
+
+
+resource "aws_instance" "web01" {
+  ami = "ami-055d15d9cfddf7bd3"
   instance_type = "t2.micro"
-  key_name = "terra"
+  key_name = "terraform"
+  
+  
+ 
+
 
   tags = {
-    Name = "AppServerInstance_112"
-    Team = "Integrated"
+    Name = "webserver instance"
+    Team = "Integrated-MW"
   }
+  
 }
 
