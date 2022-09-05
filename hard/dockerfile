@@ -1,5 +1,5 @@
 FROM ibmcom/websphere-liberty:kernel-java8-openj9-ubi
 ADD hardening_script_16_august_2022.sh /
-RUN chmod +777 hardening_script_16_august_2022.sh
+#RUN chmod +777 hardening_script_16_august_2022.sh
 RUN  ./hardening_script_16_august_2022.sh
 
