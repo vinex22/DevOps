@@ -12,5 +12,5 @@ RUN  su -c  ./hardening_script_16_august_2022.sh
 ARG wsl_normal=/opt/ibm/wlp/bin:/opt/ibm/helpers/build:/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ENV PATH=${wsl_normal}
 RUN rm hardening_script_16_august_2022.sh
-ENTRYPOINT [ "/opt/ibm/wlp/bin/server.sh","start" ]
+ENTRYPOINT [ "/opt/ibm/wlp/bin/server","start" ]
 #RUN configure.sh
