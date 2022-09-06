@@ -1,6 +1,9 @@
-FROM ibmcom/websphere-liberty:22.0.0.9-full-java8-ibmjava-ubi
+FROM ibmcom/websphere-liberty:22.0.0.6-full-java8-ibmjava-ubi
 ADD hardening_script_16_august_2022.sh /
-USER root
+#RUN export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 #RUN chmod +777 hardening_script_16_august_2022.sh
-RUN  ./hardening_script_16_august_2022.sh
-
+USER root
+RUN su -c export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+RUN  su -c  ./hardening_script_16_august_2022.sh
+RUN export PATH=/opt/ibm/wlp/bin:/opt/ibm/helpers/build:/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+#RUN configure.sh
