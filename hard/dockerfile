@@ -3,8 +3,12 @@ ADD hardening_script_16_august_2022.sh /
 #RUN export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 #RUN chmod +777 hardening_script_16_august_2022.sh
 USER root
+ARG wsl_safe=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 RUN export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+ENV PATH=${wsl_safe}
 RUN echo $PATH
+
 RUN  su -c  ./hardening_script_16_august_2022.sh
-RUN export PATH=/opt/ibm/wlp/bin:/opt/ibm/helpers/build:/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+ARG wsl_normal=/opt/ibm/wlp/bin:/opt/ibm/helpers/build:/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+ENV PATH=${wsl_normal}
 #RUN configure.sh
