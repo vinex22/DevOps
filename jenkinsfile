@@ -1,0 +1,49 @@
+pipeline {
+    agent any
+
+    environment {
+        SONARQUBE_HOME = tool name: 'SonarQube', type: 'hudson.plugins.sonar.SonarRunnerInstallation'
+    }
+
+    parameters {
+        string(name: 'SONAR_PROJECT_KEY', defaultValue: 'my-kubernetes-project', description: 'Unique project key in SonarQube')
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                // Checkout your code from version control
+            }
+        }
+
+        stage('SonarQube Analysis') {
+            steps {
+                script {
+                    def scannerHome = tool name: 'SonarQube', type: 'hudson.plugins.sonar.SonarRunnerInstallation'
+
+                    withSonarQubeEnv('Your-SonarQube-Server') {
+                        // Define a temporary workspace
+                        def tempWorkspace = pwd()
+
+                        // Download your custom JavaScript analysis script
+                        sh "curl -o analysis.js https://example.com/analysis.js"
+
+                        // Analyze Kubernetes YAML files using the custom script
+                        sh "node analysis.js ${tempWorkspace}"
+
+                        // Run SonarQube scanner
+                        sh "${scannerHome}/bin/sonar-scanner -Dsonar.projectKey=${params.SONAR_PROJECT_KEY}"
+                    }
+                }
+            }
+        }
+    }
+
+    post {
+        always {
+            // Publish the SonarQube analysis results as a post-build action
+            publishQualityGate()
+            // You can also archive artifacts, send notifications, etc.
+        }
+    }
+}
