@@ -29,4 +29,21 @@ pipeline {
                         sh "curl -o analysis.js https://example.com/analysis.js"
 
                         // Analyze Kubernetes YAML files using the custom script
-                        sh "node analysis.js ${
+                        sh "node analysis.js ${tempWorkspace}"
+
+                        // Run SonarQube scanner
+                        sh "${scannerHome}/bin/sonar-scanner -Dsonar.projectKey=${params.SONAR_PROJECT_KEY}"
+                    }
+                }
+            }
+        }
+    }
+
+    post {
+        always {
+            // Publish the SonarQube analysis results as a post-build action
+            publishQualityGate()
+            // You can also archive artifacts, send notifications, etc.
+        }
+    }
+}
